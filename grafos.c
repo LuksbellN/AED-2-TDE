@@ -226,7 +226,7 @@ int isEdge(struct Graph* graph, int src, int dest) {
     return 0;
 }
 
-void edgeLess100(struct Graph* graph, int city,int adjacents[]){
+void edgeLess100(struct Graph* graph, int city){
     struct node* temp = graph->adjLists[city];
     int i =0;
     printf("[ ");
@@ -234,8 +234,8 @@ void edgeLess100(struct Graph* graph, int city,int adjacents[]){
     {
       if (graph->values[city][temp->vertex] <= 100)
       {
-        adjacents[i]=temp->vertex;
-        printf(" vertex: %d valor: %f ",adjacents[i],graph->values[city][temp->vertex]);
+        
+        printf(" vertex: %d valor: %f ",temp->vertex,graph->values[city][temp->vertex]);
         i++;
         
       }

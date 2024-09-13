@@ -38,4 +38,4 @@ struct Graph* readGraphByFile(const char *nomeArquivo);
 void printGraph(struct Graph* graph);
 void removeEdge(struct Graph* graph, int src, int dest);
 int isEdge(struct Graph* graph, int src, int dest);
-void edgeLess100(struct Graph* graph, int city,int adjacents[]);
+void edgeLess100(struct Graph* graph, int city);
